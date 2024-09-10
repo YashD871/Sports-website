@@ -8,8 +8,23 @@
     <style>
         img {
             width: 300px;
+            /* box-shadow: 6px 6px 8px rgb(184, 217, 146); */
             padding: 20px;
             margin-top: 40pxs;
+            animation-name: zoom;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes zoom{
+            form {
+                width: 150px;
+            }
+
+            to {
+                width: 300px;
+            }
+
         }
 
         header {
@@ -17,12 +32,23 @@
             justify-content: center;
             align-items: center;
             background-color: bisque;
-
-            border: solid red;
         }
 
         .item {
             display: flex;
+        }
+
+        .btn {
+            border-radius: 20px;
+            background-color: rgb(184, 217, 146);
+        }
+
+        .btn:hover {
+            background-color: rgb(176, 65, 46);
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -34,20 +60,30 @@
     <div class="item">
         <div class="cr">
             <img src="pexels-case-originals-3657154.jpg" alt=""><br>
-            <a href="cricket.html"><h2>About Cricket</h2></a>
+            <button class="btn"> <a href="cricket.html">
+                    <h2>About Cricket</h2>
+                </a></button>
+
         </div>
         <div class="fb">
-            <img src="Sunil chetri.jfif" alt="">
-            <br>
-            <a href="football.html"><h2>About Football</h2></a>
+            <img src="Sunil chetri.jfif" alt=""><br>
+            <button class="btn"><a href="football.html">
+                    <h2>About Football</h2>
+                </a></button>
         </div>
         <div class="tenis">
             <img src="2013_Australian_Open_-_Guillaume_Rufin.jpg.webp" alt=""><br>
-            <a href="tennis.html"><h2>About Tennis</h2></a>
+            <button class="btn"><a href="tennis.html">
+                    <h2>About Tennis</h2>
+                </a></button>
+
         </div>
         <div class="boxing">
-            <img src="Boxing080905_photoshop.jpg" alt="">
-            <a href="boxing.html"><h2>Boxing</h2></a>
+            <img src="Boxing080905_photoshop.jpg" alt=""><br>
+            <button class="btn"><a href="boxing.html">
+                    <h2>Boxing</h2>
+                </a></button>
+
         </div>
     </div>
 </body>
